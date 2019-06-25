@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/productlist.css">
+  <title>商品列表</title>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="./js/rem.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <!-- @@include ./template/header.html -->
+    <!-- 搜索 -->
+    <!-- @@include ./template/search1.html -->
+    <!-- 分类 -->
+    <div class="classify">
+      <!-- 挖个坑啊 -->
+    </div>
+    <!-- 中间内容 -->
+    <div class="content">
+      <ul>
+        <!-- 挖个坑 -->
+      </ul>
+    </div>
+    <!-- 分页 -->
+    <div class="page">
+    <input type="button" value="上一页" class="one">
+    <select name="" id="panagitor">
+      
+    </select>
+    <input type="button" value="下一页" class="two">
+  </div>
+    <!-- 底部 -->
+    <!-- @@include ./template/footer.html -->
+
+
+</div>
+<script type="text/html" id="listTp1">
+      <a href="#">首页></a>
+      <a href="#">全部分类 >></a>
+      <a href="#"> {{category}}</a>
+      <input type="button" value="筛选">
+</script>
+<script type="text/html" id="productTpl">
+  {{each list v i }}
+<li class="clearfix">
+          <a href="./bijia.html?productid={{v.productId}}">
+            <div class="left">
+              <img src="{{ v.productImg.src }}" alt="">
+            </div>
+            <div class="right">
+              <p class="main">{{v.productName}} </p>
+              <span class="money">{{v.productPrice}}</span>
+              <p class="time">
+                <span>{{v.productQuote}}</span>
+                <span>{{v.productCom}}</span>
+              </p>
+            </div>
+          </a>
+        </li>
+   {{/each}}
+
+</script>
+<script src="./js/productlist.js"></script>
+</body>
+
+</html>

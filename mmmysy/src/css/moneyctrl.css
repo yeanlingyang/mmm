@@ -1,0 +1,73 @@
+.header1 {
+  padding: 0  1rem;
+  position: relative;
+  height: 1rem;
+  background-color: #ff841d;
+  text-align: center;
+  line-height: 1rem;
+}
+.header1 .content1 {
+  width: 100%;
+  font-size: .4rem;
+  color: #fff;
+}
+.header1 .down {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header1 .down a {
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  padding-right: 0.15rem;
+  padding-top: 0.15rem;
+}
+.header1 .down img {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  background-color: #fff;
+}
+.content li {
+  background-color: #fff;
+  padding: 0.2rem 0;
+  margin-bottom: 0.02rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+.content li .left {
+  float: left;
+}
+.content li .left img {
+  height: 2rem;
+  width: 2.6rem;
+}
+.content li .right {
+  overflow: hidden;
+}
+.content li .right .money {
+  color: red;
+  font-size: 0.32rem;
+}
+.content li .right .main {
+  color: black;
+  font-size: 0.3rem;
+}
+.content li .right .time {
+  margin-top: 0.4rem;
+  margin-bottom: .2rem;
+}
+.page {
+  text-align: center;
+  margin: 0 auto;
+  background: #fff;
+}
+.page input {
+  margin: 0 .2rem;
+  width: 1.7rem;
+  height: .82rem;
+  border: 1px solid #ccc;
+  margin-top: .4rem;
+  margin-bottom: .4rem;
+}

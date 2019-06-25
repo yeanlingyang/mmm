@@ -1,0 +1,124 @@
+.container .header1 {
+  padding: 0  1rem;
+  position: relative;
+  height: 1rem;
+  background-color: #ff841d;
+  text-align: center;
+  line-height: 1rem;
+}
+.container .header1 .content1 {
+  width: 100%;
+  font-size: 0.4rem;
+  color: #fff;
+}
+.container .header1 .content1 h1 {
+  font-weight: 700;
+}
+.container .header1 .down {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.container .header1 .down a {
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  padding-right: 0.15rem;
+  padding-top: 0.15rem;
+}
+.container .header1 .down img {
+  width: 100%;
+  height: 100%;
+}
+.container .nav {
+  position: relative;
+  height: 0.74rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.container .nav .head li {
+  float: left;
+  text-align: center;
+}
+.container .nav .head li:last-child {
+  border-right: 1px solid #ccc;
+}
+.container .nav .head li a {
+  width: 2.16rem;
+  height: 0.74rem;
+  line-height: 0.74rem;
+  display: block;
+  font-size: 0.3rem;
+  color: #000;
+}
+.container .nav .name {
+  position: absolute;
+  width: 100%;
+  display: none;
+  z-index: 99;
+}
+.container .nav .name li {
+  height: 0.8rem;
+  border-width: 0 0 1px;
+  border-bottom: 1px solid #dadada;
+  background-color: #fff;
+}
+.container .nav .name li a {
+  display: block;
+  line-height: 0.8rem;
+  padding: 0 0.2rem;
+  color: #000;
+}
+.container .nav .blank {
+  position: absolute;
+  width: 100%;
+  display: none;
+  z-index: 99;
+}
+.container .nav .blank a {
+  height: 0.8rem;
+  border-width: 0 0 1px;
+  border-bottom: 1px solid #dadada;
+  display: block;
+  line-height: 0.8rem;
+  padding: 0 0.2rem;
+  color: #000;
+  background-color: #fff;
+}
+.container .content li {
+  height: 4.68rem;
+  width: 3.48rem;
+  background-color: #fff;
+  padding: 0.1rem;
+  margin: 0.2rem 0.1rem;
+  float: left;
+  font: 1em sans-serif;
+}
+.container .content li img {
+  width: 100%;
+  height: 3.48rem;
+  display: block;
+  margin: 0 auto;
+}
+.container .content li p {
+  font-size: 13px;
+  color: #000;
+}
+.container .content li .price .one {
+  color: #ff841d;
+  font-size: 0.32rem;
+  float: left;
+  margin-top: 0.1rem;
+}
+.container .content li .price .two {
+  float: right;
+  width: 1.04rem;
+  height: 0.52rem;
+  background-color: #ff841d;
+  line-height: 0.52rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.28rem;
+  border-radius: 5px;
+  margin-top: 0.1rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/coupon.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>优惠卷</title>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="./js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="header1">
+      <div class="content1">
+        <h1>优惠卷</h1>
+      </div>
+      <div class="down">
+        <a href="#">
+          <img src="./img/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!--中间内容 -->
+    <div class="content">
+      <ul class="clearfix">
+      <!-- 挖个坑 -->
+      </ul>
+    </div>
+     <!-- 底部 -->
+    <!-- @@include ./template/footer.html -->
+  </div>
+  <script type="text/html" id="couTp1">
+    {{each result v i}}
+    <li data-id='{{v.couponId}}'>
+          <a href="{{v.couponLink}}?couponid={{v.couponId}}">
+            <img src="{{v.couponImg}}" alt="">
+            <p>{{v.couponTitle}}</p>
+          </a>
+        </li>
+        {{/each}}
+  </script>
+  <script src="./js/coupon.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+</body>
+
+</html>

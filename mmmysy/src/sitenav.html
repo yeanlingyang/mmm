@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/sitenav.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>国内折扣详情</title>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="./js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="header1">
+      <div class="content1">
+        <h1>商城导航</h1>
+      </div>
+      <div class="down">
+        <a href="#">
+          <img src="./img/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 中间导航部分 -->
+    <div class="nav clearfix">
+      <div class="link clearfix">
+        <!-- 挖个坑 -->
+      </div>
+    </div>
+       <!-- 底部 -->
+    <!-- @@include ./template/footer.html -->
+  </div>
+  </div>
+  <script type="text/html" id="sitTp1">
+    {{each result v i }}
+  <a href="{{v.navHref}}"><img src="{{v.navImg}}" alt="">
+          {{v.navTitle}}
+        </a>
+        {{/each}}
+  </script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/sitenav.js"></script>
+
+</body>
+
+</html>

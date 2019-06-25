@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/gsproduct.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>国内折扣详情</title>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="./js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="header1">
+      <div class="content1">
+        <h1>凑单品</h1>
+      </div>
+      <div class="down">
+        <a href="#">
+          <img src="./img/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 导航 -->
+    <div class="nav">
+      <ul class="head clearfix">
+        <li>
+          <a href="#" class="first">京东</a>
+        </li>
+        <li>
+          <a href="#" class="second one-txt-cut">华北</a>
+        </li>
+        <li>
+          <a href="#" class="all">全部价格</a>
+        </li>
+      </ul>
+      <div class="name">
+        <ul>
+         <!-- 挖个坑啊啊啊  -->
+        </ul>
+      </div>
+      <div class="blank">
+        <a href="#">全部价格</a>
+      </div>
+    </div>
+    <!-- 中间内容 -->
+    <div class="content">
+      <ul>
+        <!-- 挖个坑 -->
+      </ul>
+    </div>
+    <!-- 底部 -->
+    <!-- @@include ./template/footer.html -->
+  </div>
+<script type="text/html" id="cuttp1">
+  {{each result v i }}
+      <li>
+          <a href="#">
+            <img src="{{v.productImg}}" alt="">
+            <p class="one-txt-cut">{{v.productName}}</p>
+            <div class="price">
+              <span class="one">{{v.productPrice}}</span>
+              <span class="two">去凑单</span>
+            </div>
+          </a>
+        </li>
+        {{/each}} 
+</script>
+<!-- 店铺名称 -->
+<script type="text/html" id="nameTp1">
+  {{each result v i }}
+<li class="chooseshop" data-id={{v.shopId}}><a href="#">{{v.shopName}}</a></li>
+{{/each}}
+</script>
+<!-- 地区 -->
+<script type="text/html" id="areaTp1">
+  {{each result v i }}
+<li class="choosearea" data-id={{v.areaId}}><a href="#">{{v.areaName}}</a></li>
+{{/each}}
+</script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/gsproduct.js"></script>
+</body>
+
+</html>

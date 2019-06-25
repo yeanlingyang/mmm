@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font:  fontSize/line-height */
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #f7f7f7;
+}
+
+/*去除边框*/
+fieldset,
+img,
+input,
+button,
+textarea {
+  border: none;
+  /*去除的蓝色小边框*/
+  outline-style: none;
+}
+
+/*禁止表单域缩放*/
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: #969696;
+  /* 取消链接高亮, 移动端特有的样式  */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 图片自适应 */
+img {
+  width: 100%;
+  /*解决图片底部对其问题*/
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* 让所有的标题的标签长得都一样了 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+/* em i : 斜体的标签  废物利用  em i 相当于span */
+/* 将来有字体图标 i: icon  i */
+em,
+i {
+  font-style: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*多行溢出*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 通用的精灵图的类，如果想要使用jd_sprit,只需要添加这个类 */
+.jd_sprit {
+  background: url('../images/jd-sprites.png') no-repeat 0px 0px;
+  background-size: 200px 200px;
+}
+
+
+// 头部
+.header {
+  height: 2/2rem;
+  background-color: #ff841d;
+  .logo {
+    float: left;
+    a {
+      height: 2/2rem;
+      display: block;
+      line-height: 2/2rem;
+      padding-top: .5/2rem;
+      img {
+        width:8/2rem;
+        height: 1/2rem;
+        padding-left: .64/2rem;
+      }
+    }
+  }
+  .down {
+    float: right;
+   a {
+     width: 1.6/2rem;
+     height: 1.6/2rem;
+     display: block;
+     padding-right: .3/2rem;
+     padding-top: .3/2rem;
+   }
+   img {
+     width: 100%;
+     height: 100%;
+   }
+  }
+  
+
+}
+
+// 搜索
+.search {
+  padding: .4/2rem;
+  background-color: #fff;
+
+  .left {
+    width: 10.68/2rem;
+    height: 1.32/2rem;
+    border-radius: 0.6/2rem;
+    float: left;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    padding-left: .6/2rem;
+    font-size: .68/2rem;
+  }
+  .right {
+    width: 2.76/2rem ;
+    height: 1.32/2rem;
+    margin: 0 .12/2rem;
+    border-radius: 0.6/2rem;
+    float: right;
+    background-color: #ff841d;
+    font-size: .6/2rem;
+    color: #fff;
+  }
+  
+}
+//底部
+.foot {
+  background-color: #f1f1f1;
+  li {
+    width: 33.3%;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    float: left;
+    margin-top: 1.06/2rem;
+    text-align: center;
+    background-color: #f1f1f1;
+    &:nth-child(2n) {
+      border-left :1px solid #ccc;
+      border-right :1px solid #ccc;
+    }
+    a {
+      display: block;
+      height: 1.28/2rem;
+      line-height:  1.28/2rem;
+      color: #000;
+    }
+  }
+  .one {
+    text-align: center;
+    margin-top: .68/2rem;
+    background-color: #f1f1f1;
+  }
+  .two {
+    text-align: center;   
+    padding-bottom: .48/2rem; 
+  }
+
+}

@@ -1,0 +1,115 @@
+.container .classify {
+  height: 0.9rem;
+  border: 1px solid #ccc;
+  line-height: 0.9rem;
+  padding-left: 0.16rem;
+}
+.container .classify a {
+  color: black;
+  font-size: 0.26rem;
+}
+.container .classify input {
+  float: right;
+  height: 0.65rem;
+  width: 1.2rem;
+  margin-top: 0.1rem;
+  margin-right: 0.15rem;
+  border-radius: 8px;
+}
+.container .content {
+  text-align: center;
+  background-color: #fff;
+}
+.container .content p {
+  font-size: 0.3rem;
+  padding-top: 0.4rem;
+}
+.container .content .tv {
+  width: 3.4rem;
+  height: 3.4rem;
+  margin: 0 auto;
+}
+.container .content .content1 {
+  height: 0.8rem;
+}
+.container .content .content1 .cang {
+  width: 0.8rem;
+  height: 0.8rem;
+  float: right;
+}
+.container .buy {
+  line-height: 0.72rem;
+}
+.container .buy .shop1 {
+  text-align: center;
+}
+.container .buy .shop1 li {
+  width: 33.3%;
+  float: left;
+  height: 0.72rem;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  background-color: #ffca3b;
+}
+.container .buy .shop1 li:nth-child(2n) {
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+.container .buy .shop1 li a {
+  font-size: 0.32rem;
+  color: #fff;
+}
+.container .buy .shop2 {
+  height: 0.8rem;
+  background-color: #fff;
+}
+.container .buy .shop2 .left {
+  float: left;
+}
+.container .buy .shop2 .left img {
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-top: 0.18rem;
+  margin-left: 0.1rem;
+  float: left;
+}
+.container .buy .shop2 .left a {
+  font-size: 0.32rem;
+  color: #000;
+  margin-left: 0.12rem;
+}
+.container .buy .right {
+  float: right;
+}
+.container .buy .right span {
+  color: red;
+  font-size: 0.28rem;
+}
+.container .buy .right input {
+  width: 1.12rem;
+  height: 0.48rem;
+  margin-right: 0.12rem;
+  border-radius: 5px;
+  background-color: #ff5500;
+  color: #fff;
+}
+.container .note {
+  padding: 0.2rem;
+  background-color: #fff;
+}
+.container .evaluate {
+  font-size: 0.3rem;
+  color: #000;
+  padding: 0 0.2rem;
+}
+.container .more {
+  padding: 0.2rem;
+}
+.container .more input {
+  width: 7.1rem;
+  height: 0.65rem;
+  text-align: center;
+  background-color: #e7e7e7;
+  border: 1px solid #ccc;
+  border-radius: 0.15rem;
+}

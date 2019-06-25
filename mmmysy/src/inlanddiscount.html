@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/inlanddiscount.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>国内折扣</title>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="./js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="header1">
+      <div class="content1">
+        <h1>国内折扣</h1>
+      </div>
+      <div class="down">
+        <a href="#">
+          <img src="./img/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 中间内容 -->
+    <div class="content">
+      <ul class="clearfix">
+     <!-- 挖个坑 -->
+      </ul>
+    </div>
+     <!-- 底部 -->
+    <!-- @@include ./template/footer.html -->
+  </div>
+  <script src="./js/inlanddiscount.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script type="text/html" id="countTp1">
+    {{each result v i}}
+       <li>
+          <a href="discount.html?productid={{v.productId}}">
+            <img src="{{v.productImg.src}}" alt="{{v.productImg.alt}}">
+            <p class="one txt-cut">{{v.productName}}</p>
+            <p style="color:#ff6c00" class="two">{{v.productPrice}}</p>
+            <p class="three">{{v.productFrom}}</p>
+          </a>
+        </li>
+        {{/each}}
+  </script>
+</body>
+
+</html> 

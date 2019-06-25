@@ -1,0 +1,34 @@
+.container .content .parentWrap .menuGroup .groupTitle {
+  display: block;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.32rem;
+  color: #000;
+  background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding-left: 0.32rem;
+  font-weight: 700;
+  background-color: #ededed;
+}
+.container .content .parentWrap .menuGroup .nav {
+  background-color: #fff;
+  display: none;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+.container .content .parentWrap .menuGroup .nav.active {
+  display: block;
+}
+.container .content .parentWrap .menuGroup .nav li {
+  width: 33.3%;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  float: left;
+}
+.container .content .parentWrap .menuGroup .nav li a {
+  height: 0.8rem;
+  display: block;
+  line-height: 0.8rem;
+  color: #000;
+}

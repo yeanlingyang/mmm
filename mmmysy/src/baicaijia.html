@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/baicaijia.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>国内折扣详情</title>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="./js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="header1">
+      <div class="content1">
+        <h1>白菜价-淘宝内部劵</h1>
+      </div>
+      <div class="down">
+        <a href="#">
+          <img src="./img/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 导航 -->
+    <div class="nav">
+      <ul class="clearfix">
+     <!-- 挖个坑1 -->
+      </ul>
+    </div>
+    <!-- 中间内容 -->
+    <div class="content">
+      <ul>
+        <!-- 挖个坑2 -->
+      </ul>
+    </div>
+      <!-- 底部 -->
+    <!-- @@include ./template/footer.html -->
+  </div>
+  <!-- 导航 -->
+  <script type="text/html" id="baicaiTp1">
+  {{each result v i}}
+  <li><a href="#" data-id='{{v.titleId}}'>{{v.title}}</a></li>
+  {{/each}}
+  </script>
+   <!-- 中间内容 -->
+    <script type="text/html" id="baicaiTp2">
+      {{each result v i}}
+    <li>
+          <img src="{{v.productImg}}" alt="">
+          <div class="info">
+            <p class="one">{{v.productName}}</p>
+            <p class="two">{{v.productPrice.slice(0,v.productPrice.lastIndexOf('¥'))}}<span>{{v.productPrice.slice(v.productPrice.lastIndexOf('¥'))}}</span></p>
+            <div class="roll">
+              <div class="bar">
+                <span class="first">
+                    <div class="row" style='<%var a = v.productCouponRemain.split("%") %> width:{{a[0]}}%;'></div>
+                    <span class='first_1'>{{v.productCouponRemain.slice(0,v.productCouponRemain.lastIndexOf('%')+1)}}</span>
+                </span>
+                <span class="second">{{v.productCouponRemain.slice(3)}}</span>
+              </div>
+              <div class="link">
+                <span class="third"><a href="#">{{v.productCoupon.val}}</a></span>
+                <span class="four"><a href="#">下单链接</a></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        {{/each}}
+    </script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/baicaijia.js"></script>
+</body>
+
+</html>

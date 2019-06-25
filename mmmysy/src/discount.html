@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/discount.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>国内折扣详情</title>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="./js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="header1">
+      <div class="content1">
+        <h1>国内折扣</h1>
+      </div>
+      <div class="down">
+        <a href="#">
+          <img src="./img/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 中间内容 -->
+    <div class="content">
+      <ul>
+       <!-- 挖个坑 -->
+      </ul>
+
+    </div>
+    <!-- 前往购买 -->
+    <div class="rank">
+      <p>前往购买</p>
+      <img src="./img/mmbweixin2.png" alt="">
+    </div>
+    <!-- 发表评论 -->
+    <div class="publish">
+      <h1>发表评论</h1>
+      <div class="pu">
+        <textarea name="" id="content3">
+        </textarea>
+        <div class="ctrl"> <span>发表评论</span></div>
+      </div>
+    </div>
+    <!-- 最新评论 -->
+    <div class="comment">
+      <h2>最新评论</h2>
+      <ul>
+        <li>
+          <img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg" alt="">
+          <p class="one">赶鸭子上架<span>2016/10/25 14:18:45</span></p>
+          <p class="two">比超市便宜了几块</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/html" id="discountTp1">
+      <li>
+          <h3>{{productName}}</h3>
+          <p class="nav">{{productFrom}}  &nbsp {{productTips}}</p>
+          <div class="pic1 clearfix">
+            <div class="pic"><img src="{{productImg.src}}" alt="{{productImg.alt}}"></div>
+            <div class="info">
+              <p>{{productInfo}}</p>
+              <p>{{productName}}</p>
+            </div>
+          </div> 
+  </script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/discount.js"></script>
+</body>
+
+</html>

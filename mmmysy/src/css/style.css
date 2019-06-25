@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font:  fontSize/line-height */
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #f7f7f7;
+}
+/*去除边框*/
+fieldset,
+img,
+input,
+button,
+textarea {
+  border: none;
+  /*去除的蓝色小边框*/
+  outline-style: none;
+}
+/*禁止表单域缩放*/
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+  color: #969696;
+  /* 取消链接高亮, 移动端特有的样式  */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 图片自适应 */
+img {
+  width: 100%;
+  /*解决图片底部对其问题*/
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+}
+/* 让所有的标题的标签长得都一样了 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+/* em i : 斜体的标签  废物利用  em i 相当于span */
+/* 将来有字体图标 i: icon  i */
+em,
+i {
+  font-style: normal;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*多行溢出*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/* 通用的精灵图的类，如果想要使用jd_sprit,只需要添加这个类 */
+.jd_sprit {
+  background: url('../images/jd-sprites.png') no-repeat 0px 0px;
+  background-size: 200px 200px;
+}
+.header {
+  height: 1rem;
+  background-color: #ff841d;
+}
+.header .logo {
+  float: left;
+}
+.header .logo a {
+  height: 1rem;
+  display: block;
+  line-height: 1rem;
+  padding-top: 0.25rem;
+}
+.header .logo a img {
+  width: 4rem;
+  height: 0.5rem;
+  padding-left: 0.32rem;
+}
+.header .down {
+  float: right;
+}
+.header .down a {
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  padding-right: 0.15rem;
+  padding-top: 0.15rem;
+}
+.header .down img {
+  width: 100%;
+  height: 100%;
+}
+.search {
+  padding: 0.2rem;
+  background-color: #fff;
+}
+.search .left {
+  width: 5.34rem;
+  height: 0.66rem;
+  border-radius: 0.3rem;
+  float: left;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  padding-left: 0.3rem;
+  font-size: 0.34rem;
+}
+.search .right {
+  width: 1.38rem;
+  height: 0.66rem;
+  margin: 0 0.06rem;
+  border-radius: 0.3rem;
+  float: right;
+  background-color: #ff841d;
+  font-size: 0.3rem;
+  color: #fff;
+}
+.foot {
+  background-color: #f1f1f1;
+}
+.foot li {
+  width: 33.3%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  float: left;
+  margin-top: 0.53rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.foot li:nth-child(2n) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.foot li a {
+  display: block;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  color: #000;
+}
+.foot .one {
+  text-align: center;
+  margin-top: 0.34rem;
+  background-color: #f1f1f1;
+}
+.foot .two {
+  text-align: center;
+  padding-bottom: 0.24rem;
+}

@@ -1,0 +1,132 @@
+.container {
+  style,body {
+    width: 100%;
+    height: 100%;
+  }
+   //头部
+   .header1 {
+    padding:0  1rem;
+    position: relative;
+    height: 1rem;
+    background-color: #f4483e;
+    text-align: center;
+    line-height: 1rem;
+    .content1 {
+      width: 100%;
+      font-size: .4rem; 
+      color: #fff;
+     h1 {
+      font-weight: 700;
+     }
+    }
+    .down {
+      position: absolute;
+      right: 0;
+      top: 0;
+     a {
+       width: 1.6/2rem;
+       height: 1.6/2rem;
+       display: block;
+       padding-right: .3/2rem;
+       padding-top: .3/2rem;
+     }
+     img {
+       width: 100%;
+       height: 100%;
+     }
+    }
+  
+  
+  }
+  //说明
+  .state {
+    text-align: center;
+    color: #999;
+    margin: .1rem 0;
+  }
+  // 内容详情
+  .title {
+    background-color: #fff;
+   li {
+    border-bottom: 1px solid #999;
+    position: relative;
+    padding-left: 2.2rem;
+    height: 2.76rem;
+     a {
+       height: 2rem;
+       display: block;
+       padding: .2rem;
+       img {
+        width: 2rem;
+        height: 1.32rem;
+        position: absolute;
+        left: .2rem;
+        top: .2rem;
+      }
+      h3 {
+        font-size: .28rem;
+        color: #000;
+        margin-bottom: .2rem;
+      }
+      span {
+        color: #E70;
+        font-size: .24rem;
+      }
+     }
+   }
+  }
+  // 蒙层
+  .loading{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: none;
+    .lunbo{
+    .box{
+      width: 2rem;
+      height: 2rem;
+      margin: 4rem auto;
+      position: relative;
+      overflow: hidden;
+        ul{
+          width: 500%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          li{
+            width: 4rem;
+            height: 4rem;
+            float: left;
+            img{
+              display: block;
+              width: 2rem;
+              height: 2rem;
+              position: absolute;
+              // top: 7rem;
+              // left: 50%;
+              // transform: translateX(-50%);
+            }
+          }
+        }
+      }
+      .arrows{
+        .left,.right{
+          position: absolute;
+          top: 3.6rem;
+          font-size: 2rem;
+          font-family: '宋体';
+          font-weight: 700;
+        }
+        .left{
+          left: 1rem;
+        }
+        .right{
+          right: 1rem;
+        }
+      }
+    }
+  }
+}

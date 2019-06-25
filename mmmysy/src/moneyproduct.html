@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>省钱控详情页</title>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="./js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="header1">
+      <div class="content1">
+        <h1>国内折扣</h1>
+      </div>
+      <div class="down">
+        <a href="#">
+          <img src="./img/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 中间内容部分 -->
+    <div class="content2">
+     <!-- 挖个巨坑 -->
+    </div>
+    <!-- 前往购买 -->
+    <div class="rank">
+      <p>前往购买</p>
+      <img src="./img/mmbweixin2.png" alt="">
+    </div>
+    <!-- 发表评论 -->
+    <div class="publish">
+      <h1>发表评论</h1>
+      <div class="pu">
+        <textarea name="" id="content3">
+      </textarea>
+        <div class="ctrl"> <span>发表评论</span></div>
+      </div>
+    </div>
+    <!-- 最新评论 -->
+    <div class="comment">
+      <h2>最新评论</h2>
+      <ul>
+        <li>
+          <img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg" alt="">
+          <p class="one">赶鸭子上架<span>2016/10/25 14:18:45</span></p>
+          <p class="two">比超市便宜了几块</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/html" id="monTp1">
+    {{each result v i}}
+    <h2>{{v.productInfo1}}</h2>
+    <div class="commodity">
+      <div class="info">
+        <span>{{v.productFrom}}</span>
+        <span>{{v.productTime}}</span>
+        <span>{{v.productTips}}</span>
+      </div>
+      <div class="title">
+        <img src="{{v.productImgLg}}" alt="" class="one">
+        <p>{{v.productInfo}}</p>
+        <p>{{v.productName}}</p>
+        <p><img src="{{v.productImgSm.src}}" alt="{{v.productImgSm.alt}}"></p>
+      </div>
+    </div>
+    <div class="area">
+      <div class="area1">
+        <ul>
+          <li>
+            <span class="one">{{v.productCity}}</span>
+          </li>         
+        </ul>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/moneyproduct.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+.container .header1 {
+  padding: 0  1rem;
+  position: relative;
+  height: 1rem;
+  background-color: #f4483e;
+  text-align: center;
+  line-height: 1rem;
+}
+.container .header1 .content1 {
+  width: 100%;
+  font-size: 0.4rem;
+  color: #fff;
+}
+.container .header1 .content1 h1 {
+  font-weight: 700;
+}
+.container .header1 .down {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.container .header1 .down a {
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  padding-right: 0.15rem;
+  padding-top: 0.15rem;
+}
+.container .header1 .down img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-right: 0.6rem;
+}
+.container .nav {
+  height: 0.8rem;
+  line-height: 0.76rem;
+  overflow: scroll;
+  text-align: center;
+  background-color: #fff;
+}
+.container .nav ul {
+  width: 17.7rem;
+}
+.container .nav ul li {
+  float: left;
+}
+.container .nav ul li.current {
+  border-bottom: 0.066667rem /* 5/75 */ solid #F4483E;
+}
+.container .nav ul li a {
+  width: 1.36rem;
+  height: 0.76rem;
+  display: block;
+  color: #333;
+  font-size: 0.28rem;
+}
+.container .content li {
+  height: 3rem;
+  margin-top: 0.2rem;
+  background-color: #fff;
+  position: relative;
+  padding-left: 2.8rem;
+}
+.container .content li .info .one {
+  font-size: 0.28rem;
+}
+.container .content li .info .two {
+  color: red;
+  font-size: 0.4rem;
+  padding-top: 0.2rem;
+}
+.container .content li .info .two span {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.28rem;
+}
+.container .content img {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #999;
+}
+.container .content .roll {
+  bottom: 0;
+}
+.container .content .roll .bar {
+  text-align: center;
+}
+.container .content .roll .bar .first {
+  display: block;
+  width: 1.64rem;
+  height: 0.26rem;
+  border: 1px solid #fc353a;
+  border-radius: 10px;
+  background-color: #ffb7b7;
+  float: left;
+  position: relative;
+}
+.container .content .roll .bar .first .first_1 {
+  font-weight: 700;
+  color: #fff;
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  top: -0.0325rem;
+  transform: translateX(-50%);
+}
+.container .content .roll .bar .first .row {
+  width: 0.2rem;
+  height: 0.26rem;
+  background-color: red;
+  border-radius: 0.2rem;
+}
+.container .content .roll .bar .second {
+  color: #fc353a;
+}
+.container .content .roll .link {
+  padding-top: 0.1rem;
+}
+.container .content .roll .link .third {
+  text-align: center;
+}
+.container .content .roll .link .third a {
+  width: 2.4rem;
+  height: 0.5rem;
+  display: block;
+  border: 1px dashed #fc353a;
+  line-height: 0.5rem;
+  color: red;
+  float: left;
+}
+.container .content .roll .link .four {
+  text-align: center;
+  margin-right: 0.2rem;
+  float: right;
+  display: block;
+  width: 1.2rem;
+  height: 0.56rem;
+  background-color: #ff5e5d;
+  border-radius: 4px;
+  line-height: 0.56rem;
+}
+.container .content .roll .link .four a {
+  color: #fff;
+}
